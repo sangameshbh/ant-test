@@ -1,0 +1,24 @@
+<project name="DEVOPS" default="svn">
+<echo message="welcome to devops classes" />
+<target name="svn" depends="ant">
+<echo message="subversion version control" />
+</target>
+<target name="ant" depends="tomat">
+<echo message="welcome to ant tool" />
+</target>
+<target name="tomat" depends="maven">
+<echo message="welcome to tomcat tool" />
+</target>
+<target name="maven" depends="git">
+<echo message="welcome to maven tool" />
+</target>
+<target name="git" depends="jenkins">
+<echo message="welcome to git tool" />
+</target>
+<target name="jenkins" depends="AWS">
+<echo message="welcome to jenkins tool" />
+</target>
+<target name="AWS">
+<echo message="welcome to AWS tool" />
+</target>
+</project>
